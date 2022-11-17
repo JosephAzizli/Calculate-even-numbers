@@ -1,77 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-body{
-    font-family: 'Roboto', sans-serif;
-    background: #242026;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  background: #242026;
 }
-form{
-    width: 600px;
-    padding: 40px;
-    background: #242026;
-    box-shadow: 0 15px 25px rgba(143, 124, 236, 0.7);
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  padding: 40px;
+  background: #242026;
+  box-shadow: 0 15px 25px rgba(143, 124, 236, 0.7);
 }
-input{
-    position: relative;
-    width: 100%;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    margin-bottom: 30px;
-    border: none;
-    border-bottom: 1px solid #fff;
-    outline: none;
-    background: transparent;
+input {
+  position: relative;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
 }
-label{
-    position: relative;
-    left: 0;
-    top: -60px;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    pointer-events: none;
-    transition: .5s;
+label {
+  position: relative;
+  left: 0;
+  top: -60px;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
 }
-input:focus~label,
-input:valid~label{
-    top: -85px;
-    left: 0;
-    color: #8F7CEC;
-    font-size: 12px;
+input:focus ~ label,
+input:valid ~ label {
+  top: -85px;
+  left: 0;
+  color: #8f7cec;
+  font-size: 12px;
 }
-button{
-    background: transparent;
-    color: #3bd9d9;
-    font-weight: 400;
-    font-size: 16px;
-    text-transform: uppercase;
-    padding: 8px 24px;
-    border: 2px solid #3bd9d9;
-    border-radius: 32px;
-    transform: translate(0);
-    overflow: hidden;
-    cursor: pointer;
+button {
+  background: transparent;
+  color: #3bd9d9;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 8px 24px;
+  border: 2px solid #3bd9d9;
+  border-radius: 32px;
+  transform: translate(0);
+  overflow: hidden;
+  cursor: pointer;
 }
-button::before{
-    content: "";
-    position: absolute;
-    background: #3bd9d9;
-    width: 8px;
-    top: 0;
-    bottom: 0;
-    left: -32px;
-    transform: rotate(16deg);
-    filter: blur(6px);
+button::before {
+  content: "";
+  position: absolute;
+  background: #3bd9d9;
+  width: 8px;
+  top: 0;
+  bottom: 0;
+  left: -32px;
+  transform: rotate(16deg);
+  filter: blur(6px);
 }
-button:hover::before{
-    left: calc(100% + 32px);
-    transition: 0.75s;
+button:hover::before {
+  left: calc(100% + 32px);
+  transition: 0.75s;
 }
 
-h3{
-    color: #fff;
-    text-shadow: red -2px 0, cyan 2px 0;
-    
+h3 {
+  color: #fff;
+  text-shadow: red -2px 0, cyan 2px 0;
 }
-#result{
-    color: #fff;
+#result {
+  color: #fff;
 }
