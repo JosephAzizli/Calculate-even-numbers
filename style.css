@@ -35,7 +35,7 @@ label {
   pointer-events: none;
   transition: 0.5s;
 }
-input:focus ~ label {
+input:focus ~ label, input:valid ~ label {
   top: -85px;
   left: 0;
   color: #8f7cec;
