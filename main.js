@@ -11,4 +11,18 @@ calcBtn.onclick = function () {
   } else {
     alert("Please enter even numbers :)");
   }
-};
+}
+
+    var inputs = document.querySelectorAll("input,select");
+for (var i = 0 ; i < inputs.length; i++) {
+   inputs[i].addEventListener("keypress", function(e){
+      if (e.which == 13) {
+         e.preventDefault();
+         var nextInput = document.querySelectorAll('[tabIndex="' + (this.tabIndex + 1) + '"]');
+         if (nextInput.length === 0) {
+            calcBtn.onclick ();
+         }
+         nextInput[0].focus();
+      }
+   })
+}
